@@ -1,0 +1,113 @@
+$gradient: linear-gradient(112deg, #AAFFEC -63.59%, #ff4ecd -20.3%, #0070F3 70.46%);
+
+.formContainer {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 124px;
+        height: 124px;
+        background: linear-gradient(154.73deg, #EF0070 17.98%, #0ACEDB 83.97%);
+        position: absolute;
+        top: -20px;
+        z-index: 1;
+        border-radius: 50%;
+        left: -20px;
+    }
+
+    &::after {
+        content: '';
+        width: 124px;
+        height: 124px;
+        background: linear-gradient(154.73deg, #EF0070 17.98%, #0ACEDB 83.97%);
+        position: absolute;
+        bottom: -35px;
+        right: -20px;
+        z-index: 1;
+        border-radius: 50%;
+    }
+
+    .form {
+        border: 1px solid rgba(255, 255, 255, .2);
+        padding: 1.25rem;
+        background:  linear-gradient(161.58deg, rgba(217, 217, 217, 0.2) 10%, rgba(0, 0, 0, 0.74) 99.95%);
+        color: #eee;
+        backdrop-filter: blur(10px);
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem 0;
+        border-radius: 8px;
+    
+        & h1 {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    
+        .form__name, .form__image, .form__description {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem 0;
+            font-weight: bold;
+        }
+    
+        .basic__info {
+            display: flex;
+            gap: .5rem 0;
+            flex-direction: column;
+
+            .form__name {
+                .form__nameInput {
+                    padding: .75rem;
+                    font-size: 16px;
+                    background-color: transparent;
+                    border: 1px solid #eee;
+                    color: #fff;
+                    border-radius: 8px;
+                }
+            }
+
+            .form__image {
+                .form__imageContainerInput {
+                    position: relative;
+                    width: 100%;
+                    // padding: .75rem;
+                    height: 4rem;
+                    background: $gradient;
+                    border-radius: .5rem;
+                    .form__imageContainerInput__input {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .form__description {
+            .form__descriptionText {
+                background-color: transparent;
+                color: #fff;
+            }
+        }
+        
+        .submit__project {
+            background-color: transparent;
+            border: 1px solid #0056D0;
+            padding: .75rem;
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:active {
+                background-color: rgba($color: #0056D0, $alpha: 0.1);
+                transform: scale(0.95);
+            }
+        }
+    }
+}
