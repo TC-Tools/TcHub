@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "En este espacio se crearan los test que se ejecutaran en los pipelines de github",
+  "main": "graphql.test.js",
+  "scripts": {
+    "test": "jest ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TC-Tools/tchub.git"
+  },
+  "keywords": [
+    "Test",
+    "Jest"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TC-Tools/tchub/issues"
+  },
+  "homepage": "https://github.com/TC-Tools/tchub#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
