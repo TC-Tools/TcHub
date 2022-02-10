@@ -1,7 +1,7 @@
 import Head from "next/head"
 
 // Components
-import FormSection from "components/user/addProject/formSection"
+import FormSection from "components/user/addProject/FormSection"
 
 export default () => {
     return (
